@@ -12,6 +12,7 @@ In this project, an Arduino MKR is used to measure the frequency of the power gr
 
 To measure 50Hz, all we need is a 20cm piece of wire connected to a free GPIO on the Arduino via a 1MOhm resistor. The inputs are very high impedance, so this ‘antenna’ can be used to easily measure the 50Hz on a cable passing by. The resistor, together with the input capacitances, forms a high-pass filter.
 In my software, I use GPIO14 (TxD) of the Arduino because this pin is not used by the AZ-Touch. In principle, however, any other pin can be used with the exception of the I2C pins. 
+For the measurement, it is sufficient to supply the Arduino MKR with 5V, e.g. via USB. The antenna is placed next to a cable carrying 230V. 
 
 
 ## Essential Libraries
